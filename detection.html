@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Detection</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ORIon-UTBMan</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">HSR Detection</h1>
+								<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+								<p>
+									Object Detection allows the robot to use the visual and depth input from its RGB-D cameras to determine the
+									identity and location of objects in the surroundings. Currently, Team ORIon-UTBMan have implemented a Faster R-CNN
+									model with a ResNet-50-FPN backbone, which have been pre-trained on the COCO datasets. Click on the button below to see a video demonstration.
+								</p>
+									<ul class="actions">
+									<li><a href="https://www.youtube.com/watch?v=LMesve7R7D4" class="button">CLick to video</a></li>
+								</ul>	
+								<p>
+									With ref-
+									erence to figure 1, the current im-
+									age from the camera being inputted
+									into the model, which in turn out-
+									puts a bounding box for an object,
+									the object’s identity, and the confi-
+									dence level. We then process the out-
+									put by applying non-maximum sup-
+									pression to the set of outputs to re-
+									move duplicate detections, then ap-
+									ply a minimum confidence threshold.
+									Image coordinates of detected objects
+									are transformed into 3D, using ROS
+									tf.
+								</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

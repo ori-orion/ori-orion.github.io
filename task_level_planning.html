@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Task level planning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ORIon-UTBMan</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">HSR Task Level Planning</h1>
+								<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+								<p>
+									The task-level planning sub-system acts as the executive controller of the robot
+									system. Combined with information from semantic map, navigation, object detection, speech
+									and manipulation, the HSR is able to perform useful tasks in a domestic environ-
+									ment (e.g., fetching a bottle of water for a human). The task planner works heavily with semantic map sub-system 
+									in order to retrieve all sorts of information seen by the HSR. We go through details of our Semantic map subsystem below.								
+								</p>
+								<h2 class="major">HSR Semantic map</h2>	
+								<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+								<p>
+									Learning and recognising objects during operation, and reasoning about them, 
+									are key tasks for a mobile service robot in human environments.
+
+									Our semantic mapping sub-system obtains information from the object detection sub-system and maintains 
+									a semantic object map to track the positions of objects based on their class (e.g., book, water bottle). 
+									It is implemented on top of a MongoDB database. One functionality of the semantic object map is to evaluate 
+									queries on relative position relationships between objects (e.g., is object A above object B?, 
+									are there any objects in the living room?). The semantic map can also compute how semantically similar two object classes are
+									(e.g., how semantically similar is an apple to a banana?) using the W3C Web Ontology Language (OWL) ontology format.
+								</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
