@@ -31,31 +31,17 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">HSR Detection</h1>
-								<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+								<span class="image 4"><img src="images/orion_perception.jpg" alt="" /></span>
 								<p>
 									Object Detection allows the robot to use the visual and depth input from its RGB-D cameras to determine the
-									identity and location of objects in the surroundings. Currently, Team ORIon-UTBMan have implemented a Faster R-CNN
-									model with a ResNet-50-FPN backbone, which have been pre-trained on the COCO datasets. Click on the button below to see a video demonstration.
+									identity and location of objects in the surroundings. With reference to the above image, the current image from the camera being inputted
+									into the model, which in turn outputs a bounding box for an object, the object’s identity, and the confidence level. We then process the output by applying non-maximum suppression to the set of outputs to remove duplicate detections, then apply a minimum confidence threshold. Image coordinates of detected objects are transformed into 3D using ROS tf.
+									Currently, Team ORIon-UTBMan have implemented a Faster R-CNN model with a ResNet-50-FPN backbone, which have been pre-trained on the COCO datasets. Click on the button below to see a video demonstration.
 								</p>
 									<ul class="actions">
-									<li><a href="https://www.youtube.com/watch?v=LMesve7R7D4" class="button">CLick to video</a></li>
+									<li><a href="https://www.youtube.com/watch?v=LMesve7R7D4" class="button">CLick here for youtube video</a></li>
 								</ul>	
-								<p>
-									With ref-
-									erence to figure 1, the current im-
-									age from the camera being inputted
-									into the model, which in turn out-
-									puts a bounding box for an object,
-									the object’s identity, and the confi-
-									dence level. We then process the out-
-									put by applying non-maximum sup-
-									pression to the set of outputs to re-
-									move duplicate detections, then ap-
-									ply a minimum confidence threshold.
-									Image coordinates of detected objects
-									are transformed into 3D, using ROS
-									tf.
-								</p>
+
 						</div>
 					</section>
 
